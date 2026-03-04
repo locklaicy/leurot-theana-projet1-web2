@@ -62,8 +62,10 @@
             </div>
         </div>
         <div class="schedule"> <!--Penser à mettre en row dans le css-->
-            <h1 class="schedule__title">Horaire</h1>
-            <span class="schedule__subtitble">Consulter notre horaire des performances</span>
+            <div class="schedule-header">
+                <h1 class="schedule-header__title">Horaire</h1>
+            <span class="schedule-header__subtitble">Consulter notre horaire des performances</span>
+            </div>
             <div class="schedule__list">
                 <div class="schedule-card">
                     <div class="schedule-card__logo">
@@ -126,17 +128,90 @@
             </div>
         </div>
         <div class="tickets">
-
+            <h1 class="tickets__title">Billets</h1>
+            <div class="tickets__list">
+                <div class="tickets-card">
+                    <span class="tickets-card__logo">🎫</span>
+                    <span class="tickets-card__title">Standard</span>
+                    <span class="tickets-card__price">$50</span>
+                </div>
+                <div class="tickets-card">
+                    <span class="tickets-card__logo">🔖</span>
+                    <span class="tickets-card__title">VIP</span>
+                    <span class="tickets-card__price">$100</span>
+                </div>
+                <div class="tickets-card">
+                    <span class="tickets-card__logo">🌟</span>
+                    <span class="tickets-card__title">Passeport 3 jours</span>
+                    <span class="tickets-card__price">$120</span>
+                </div>
+            </div>
         </div>
         <div class="sponsors">
-
+            <div class="sponsors-header">
+                <h1 class="sponsors-header__title">Partenaires</h1>
+                <span class="sponsors-header__subtitle">Nos précieux partenaires.</span>
+            </div>
+            <div class="sponsors__list">
+                <div class="sponsors-card">
+                    <img src="./assets/stream.png" class="sponsors-card__logo">
+                    <span class="sponsors-card__title">Partenaire inc.</span>
+                </div>
+                <div class="sponsors-card">
+                    <img src="./assets/gesture.png" class="sponsors-card__logo">
+                    <span class="sponsors-card__title">Précieux et investi</span>
+                </div>
+                <div class="sponsors-card">
+                    <img src="./assets/insights.png" class="sponsors-card__logo">
+                    <span class="sponsors-card__title">Une compagnie qui investit</span>
+                </div>
+                <div class="sponsors-card">
+                    <img src="./assets/send.png" class="sponsors-card__logo">
+                    <span class="sponsors-card__title">Super partenaire</span>
+                </div>
+            </div>
         </div>
         <div class="opinions">
-
+            <div class="opinion-header">
+                <h1 class="opinion-header__title">Témoignages</h1>
+                <span class="opinion-header__subtitble">Écoutez ce que les gens disent!</span>
+            </div>
+            </div>
+            <div class="opinion__list">
+                <div class="opinion-card">
+                    <div class="opinion-card__logo">
+                        <img src="./assets/person.png" class="opinion-card__logo--img">
+                    </div>
+                    <h1 class="opinion-card__title">Anne</h1>
+                    <span class="opinion-card__subtitle">Un festival incroyable avec une ambiance électrisante!</span>
+                </div>
+                <div class="opinion-card">
+                    <div class="opinion-card__logo">
+                        <img src="./assets/Vector.png" class="opinion-card__logo--img">
+                    </div>
+                    <h1 class="opinion-card__title">Marco</h1>
+                    <span class="opinion-card__subtitle">Des atristes de haut niveau et une organisation parfaite.</span>
+                </div>
+            </div>
         </div>
-        <form class="content">
-
-        </form>
+        <div class="contact">
+            <div class="contact-header">
+                <h1 class="contact-header_title">Contact</h1>
+                <span class="contact-header_subtitle">Nous aimerions avoir de vos nouvelles!</span>
+            </div>
+            <form class="contact-form">
+                <label>Nom</label>
+                <input type="text" value="Entrez votre nom">
+                <label>Email</label>
+                <input type="text" value="Entrez votre email">
+                <label>Message</label>
+                <input type="text" value="Entrez votre message">
+                <div class="contact-form__btn">
+                    <input type="submit" value="Annuler" class="contact-form__btn--secondary">
+                    <input type="submit" value="Envoyer" class="contact-form__btn--primary">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
 
