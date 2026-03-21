@@ -10,30 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header__brand">
-            <span class="header__logo">LUM.UR</span>
-            <span class="header__title">Lumière Urbaine</span>
+    <!--En-tête de la page-->
+    <header class="bar">
+        <!--Logo de la marque-->
+        <div class="header__logo">
+            <h1>LUM.UR</h1>
+            <span>Lumière Urbaine</span>
         </div>
+        <!--Barre de navigation-->
         <nav class="navbar">
-            <a href="#">Programmation</a>
-            <a href="#">Horaire</a>
-            <a href="#">Artistes</a>
-            <a href="#">Billets</a>
-            <a href="#">Partenaires</a>
-            <a href="#">Témoignages</a>
-            <a href="#">Contact</a>
-        </nav>   
+            <span>Programmation</span>
+            <span>Horaire</span>
+            <span>Artistes</span>
+            <span>Billets</span>
+            <span>Partenaires</span>
+            <span>Témoignages</span>
+            <span>Contact</span>
+        </nav>  
+        <div class="button">
+            <span>Obtenez vos billets</span>
+        </div>
     </header>
     <main>
+        <!--Hero de la page-->
         <div class="hero">
             <h1>LUMIÈRE URBAINE</h1>
             <h2>3 jours de musique et d'art immersif.</h2>
-            <button class="btn--secondary">En savoir plus</button>
-            <button class="btn--primary">Acheter des billets</button>
+            <div class="button">
+                <span class="btn--secondary">En savoir plus</span>
+                <span class="btn--primary">Acheter des billets</span>
+            </div>
         </div>
-        <div class="program">
-            <h1 class="program__title">Programmation</h1> <!--Penser à mettre en capslock dans le css-->
+        <!--Section « Programmation »-->
+        <div class="card-column">
+            <div class="card__header">
+                <h1>Programmation</h1>
+            </div>
             <div class="program__list">
                 <div class="program-card">
                     <div class="program-card__img">
@@ -61,9 +73,10 @@
                 </div>
             </div>
         </div>
-        <div class="schedule"> <!--Penser à mettre en row dans le css-->
-            <div class="schedule-header">
-                <h1 class="schedule-header__title">Horaire</h1>
+        <!--Section « Horaire »-->
+        <div class="card-row"> 
+            <div class="card__header">
+                <h1>Horaire</h1>
             <span class="schedule-header__subtitble">Consulter notre horaire des performances</span>
             </div>
             <div class="schedule__list">
@@ -93,13 +106,16 @@
                 </div>
             </div>
         </div>
-        <div class="artists">
-            <h1 class="artists__title">Artistes</h1> <!--Penser à mettre en capslock dans le css-->
+        <!--Section « Artistes »-->
+        <div class="card-column">
+            <div class="card__header">
+                <h1>Artistes</h1>
+            </div>
             <div class="artists__list">
                 <div class="artists-card--favorite">
                     <div class="artists-card__img">
                         <span class="artists-card__img--tag">En vedette</span>
-                        <span class="artists-card__img--title"></span>Artiste 1</span>
+                        <span class="card__title"></span>Artiste 1</span>
                     </div>
                     <h1 class="program-card__title">Bob l'artiste favori des médias numériques</h1>
                     <span class="program-card__subtitle">Genre: Pop</span>
@@ -127,8 +143,11 @@
                 </div>
             </div>
         </div>
-        <div class="tickets">
-            <h1 class="tickets__title">Billets</h1>
+        <!--Section « Billets »-->
+        <div class="card-column--tickets">
+            <div class="card__header">
+                <h1>Billets</h1>
+            </div>
             <div class="tickets__list">
                 <div class="tickets-card">
                     <span class="tickets-card__logo">🎫</span>
@@ -147,10 +166,11 @@
                 </div>
             </div>
         </div>
-        <div class="sponsors">
-            <div class="sponsors-header">
-                <h1 class="sponsors-header__title">Partenaires</h1>
-                <span class="sponsors-header__subtitle">Nos précieux partenaires.</span>
+        <!--Section « Partenaires »-->
+        <div class="card-column">
+            <div class="card__header">
+                <h1>Partenaires</h1>
+                <span>Nos précieux partenaires.</span>
             </div>
             <div class="sponsors__list">
                 <div class="sponsors-card">
@@ -171,10 +191,11 @@
                 </div>
             </div>
         </div>
-        <div class="opinions">
-            <div class="opinion-header">
-                <h1 class="opinion-header__title">Témoignages</h1>
-                <span class="opinion-header__subtitble">Écoutez ce que les gens disent!</span>
+        <!--Section « Témoignages »-->
+        <div class="card-row">
+            <div class="card__header">
+                <h1>Témoignages</h1>
+                <span>Écoutez ce que les gens disent!</span>
             </div>
             </div>
             <div class="opinion__list">
@@ -194,10 +215,11 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
-            <div class="contact-header">
-                <h1 class="contact-header_title">Contact</h1>
-                <span class="contact-header_subtitle">Nous aimerions avoir de vos nouvelles!</span>
+        <!--Section « Contact »-->
+        <div class="card-row--contact">
+            <div class="card__header">
+                <h1>Contact</h1>
+                <span>Nous aimerions avoir de vos nouvelles!</span>
             </div>
             <form class="contact-form">
                 <label>Nom</label>
@@ -207,14 +229,18 @@
                 <label>Message</label>
                 <input type="text" value="Entrez votre message">
                 <div class="contact-form__btn">
-                    <input type="submit" value="Annuler" class="contact-form__btn--secondary">
-                    <input type="submit" value="Envoyer" class="contact-form__btn--primary">
+                    <input type="submit" value="Annuler" class="btn--secondary">
+                    <input type="submit" value="Envoyer" class="btn--primary">
                 </div>
             </form>
         </div>
     </main>
-    <footer>
-
+    <!--Pied de page-->
+    <footer class="bar">
+        <button>Obtenez vos billets</button>
+        <span>Politique de confidentialité</span>
+        <span>Condition d'utilisation</span>
+        <span>2023 Festival Lumière Urbaine</span>
     </footer>
 </body>
 </html>
