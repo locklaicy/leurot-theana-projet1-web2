@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!--En-tête de la page-->
     <header class="bar">
@@ -26,7 +30,7 @@
             <span>Partenaires</span>
             <span>Témoignages</span>
             <span>Contact</span>
-        </nav>  
+        </nav>
         <div class="button">
             <span>Obtenez vos billets</span>
         </div>
@@ -46,7 +50,7 @@
             <div class="card__header">
                 <h1>Programmation</h1>
             </div>
-            <div class="program__list">
+            <div class="program__list"> <!--Liest et cartes de la section Programmation-->
                 <div class="program-card">
                     <div class="program-card__img">
                         <span class="program-card__img--tag">Jour 1</span>
@@ -74,35 +78,49 @@
             </div>
         </div>
         <!--Section « Horaire »-->
-        <div class="card-row"> 
+        <div class="card-row">
             <div class="card__header">
                 <h1>Horaire</h1>
-            <span class="schedule-header__subtitble">Consulter notre horaire des performances</span>
+                <span class="schedule-header__subtitble">Consulter notre horaire des performances</span>
             </div>
             <div class="schedule__list">
-                <div class="schedule-card">
-                    <div class="schedule-card__logo">
-                        <img src="./assets/Vector.png" class="schedule-card__logo--img">
-                        <span class="schedule-card__logo--letter">V</span>
+                <div class="schedule-row">
+                    <div class="schedule-article">
+                        <div class="schedule-article__image-container">
+                            <div class="schedule-article__image">
+                                <img src="./assets/Vector.png" class="schedule-card__logo--img">
+                                <span class="schedule-card__logo--letter">V</span>
+                            </div>
+                        </div>
+                        <div class="schedule-article__text">
+                            <h1 class="schedule-card__title">Vendredi</h1>
+                            <span class="schedule-card__subtitle">Perforamnce de 15h à 23h.</span>
+                        </div>
                     </div>
-                    <h1 class="schedule-card__title">Vendredi</h1>
-                    <span class="schedule-card__subtitle">Perforamnce de 15h à 23h.</span>
-                </div>
-                <div class="schedule-card">
-                    <div class="schedule-card__logo">
-                        <img src="./assets/Vector.png" class="schedule-card__logo--img">
-                        <span class="schedule-card__logo--letter">V</span>
+                    <div class="schedule-article">
+                        <div class="schedule-article__image-container">
+                            <div class="schedule-article__image">
+                                <img src="./assets/Vector.png" class="schedule-card__logo--img">
+                                <span class="schedule-card__logo--letter">S</span>
+                            </div>
+                        </div>
+                        <div class="schedule-article__text">
+                            <h1 class="schedule-card__title">Samedi</h1>
+                            <span class="schedule-card__subtitle">Perforamnce de 12h à 22h.</span>
+                        </div>
                     </div>
-                    <h1 class="schedule-card__title">Samedi</h1>
-                    <span class="schedule-card__subtitle">Perforamnce de 12h à 22h.</span>
-                </div>
-                <div class="schedule-card">
-                    <div class="schedule-card__logo">
-                        <img src="./assets/Vector.png" class="schedule-card__logo--img">
-                        <span class="schedule-card__logo--letter">V</span>
+                    <div class="schedule-article">
+                        <div class="schedule-article__image-container">
+                            <div class="schedule-article__image">
+                                <img src="./assets/Vector.png" class="schedule-card__logo--img">
+                                <span class="schedule-card__logo--letter">D</span>
+                            </div>
+                        </div>
+                        <div class="schedule-article__text">
+                            <h1 class="schedule-card__title">Dimanche</h1>
+                            <span class="schedule-card__subtitle">Perforamnce de 14h à 21h.</span>
+                        </div>
                     </div>
-                    <h1 class="schedule-card__title">Dimanche</h1>
-                    <span class="schedule-card__subtitle">Perforamnce de 14h à 21h.</span>
                 </div>
             </div>
         </div>
@@ -115,31 +133,39 @@
                 <div class="artists-card--favorite">
                     <div class="artists-card__img">
                         <span class="artists-card__img--tag">En vedette</span>
-                        <span class="card__title"></span>Artiste 1</span>
+                        <span class="artists-card__img--title">Artiste 1</span>
                     </div>
-                    <h1 class="program-card__title">Bob l'artiste favori des médias numériques</h1>
-                    <span class="program-card__subtitle">Genre: Pop</span>
+                    <div class="artists-card__text">
+                        <h1>Bob l'artiste favori des médias numériques</h1>
+                        <span>Genre: Pop</span>
+                    </div>
                 </div>
                 <div class="artists-card">
                     <div class="artists-card__img">
-                        <span class="artists-card__img--title"></span>Artiste 2</span>
+                        <span class="artists-card__img--title">Artiste 2</span>
                     </div>
-                    <h1 class="program-card__title">George l'artiste émergeant très prometteur</h1>
-                    <span class="program-card__subtitle">Genre: Rock</span>
+                    <div class="artists-card__text">
+                        <h1>George l'artiste émergeant très prometteur</h1>
+                        <span>Genre: Rock</span>
+                    </div>
                 </div>
                 <div class="artists-card">
                     <div class="artists-card__img">
-                        <span class="artists-card__img--title"></span>Artiste 3</span>
+                        <span class="artists-card__img--title">Artiste 3</span>
                     </div>
-                    <h1 class="program-card__title">Mélo Super Nova</h1>
-                    <span class="program-card__subtitle">Genre: Jazz</span>
+                    <div class="artists-card__text">
+                        <h1>Mélo Super Nova</h1>
+                        <span>Genre: Jazz</span>
+                    </div>
                 </div>
                 <div class="artists-card">
                     <div class="artists-card__img">
-                        <span class="artists-card__img--title"></span>Artiste 4</span>
+                        <span class="artists-card__img--title">Artiste 4</span>
                     </div>
-                    <h1 class="program-card__title">Maria la Kid Synthétique</h1>
-                    <span class="program-card__subtitle">Genre: Électro</span>
+                    <div class="artists-card__text">
+                        <h1>Maria la Kid Synthétique</h1>
+                        <span>Genre: Électro</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,20 +175,22 @@
                 <h1>Billets</h1>
             </div>
             <div class="tickets__list">
-                <div class="tickets-card">
-                    <span class="tickets-card__logo">🎫</span>
-                    <span class="tickets-card__title">Standard</span>
-                    <span class="tickets-card__price">$50</span>
-                </div>
-                <div class="tickets-card">
-                    <span class="tickets-card__logo">🔖</span>
-                    <span class="tickets-card__title">VIP</span>
-                    <span class="tickets-card__price">$100</span>
-                </div>
-                <div class="tickets-card">
-                    <span class="tickets-card__logo">🌟</span>
-                    <span class="tickets-card__title">Passeport 3 jours</span>
-                    <span class="tickets-card__price">$120</span>
+                <div class="tickets__row">
+                    <div class="tickets-card">
+                        <span class="tickets-card__logo">🎫</span>
+                        <span class="tickets-card__title">Standard</span>
+                        <span class="tickets-card__price">$50</span>
+                    </div>
+                    <div class="tickets-card">
+                        <span class="tickets-card__logo">🔖</span>
+                        <span class="tickets-card__title">VIP</span>
+                        <span class="tickets-card__price">$100</span>
+                    </div>
+                    <div class="tickets-card">
+                        <span class="tickets-card__logo">🌟</span>
+                        <span class="tickets-card__title">Passeport 3 jours</span>
+                        <span class="tickets-card__price">$120</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,21 +201,23 @@
                 <span>Nos précieux partenaires.</span>
             </div>
             <div class="sponsors__list">
-                <div class="sponsors-card">
-                    <img src="./assets/stream.png" class="sponsors-card__logo">
-                    <span class="sponsors-card__title">Partenaire inc.</span>
-                </div>
-                <div class="sponsors-card">
-                    <img src="./assets/gesture.png" class="sponsors-card__logo">
-                    <span class="sponsors-card__title">Précieux et investi</span>
-                </div>
-                <div class="sponsors-card">
-                    <img src="./assets/insights.png" class="sponsors-card__logo">
-                    <span class="sponsors-card__title">Une compagnie qui investit</span>
-                </div>
-                <div class="sponsors-card">
-                    <img src="./assets/send.png" class="sponsors-card__logo">
-                    <span class="sponsors-card__title">Super partenaire</span>
+                <div class="sponsors__row">
+                    <div class="sponsors-card">
+                        <img src="./assets/stream.png" class="sponsors-card__logo">
+                        <span class="sponsors-card__title">Partenaire inc.</span>
+                    </div>
+                    <div class="sponsors-card">
+                        <img src="./assets/gesture.png" class="sponsors-card__logo">
+                        <span class="sponsors-card__title">Précieux et investi</span>
+                    </div>
+                    <div class="sponsors-card">
+                        <img src="./assets/insights.png" class="sponsors-card__logo">
+                        <span class="sponsors-card__title">Une compagnie qui investit</span>
+                    </div>
+                    <div class="sponsors-card">
+                        <img src="./assets/send.png" class="sponsors-card__logo">
+                        <span class="sponsors-card__title">Super partenaire</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,21 +227,22 @@
                 <h1>Témoignages</h1>
                 <span>Écoutez ce que les gens disent!</span>
             </div>
-            </div>
             <div class="opinion__list">
-                <div class="opinion-card">
-                    <div class="opinion-card__logo">
-                        <img src="./assets/person.png" class="opinion-card__logo--img">
+                <div class="opinion__row">
+                    <div class="opinion-card">
+                        <div class="opinion-card__logo">
+                            <img src="./assets/person.png" class="opinion-card__logo--img">
+                        </div>
+                        <h1>Anne</h1>
+                        <span>Un festival incroyable avec une ambiance électrisante!</span>
                     </div>
-                    <h1 class="opinion-card__title">Anne</h1>
-                    <span class="opinion-card__subtitle">Un festival incroyable avec une ambiance électrisante!</span>
-                </div>
-                <div class="opinion-card">
-                    <div class="opinion-card__logo">
-                        <img src="./assets/Vector.png" class="opinion-card__logo--img">
+                    <div class="opinion-card">
+                        <div class="opinion-card__logo">
+                            <img src="./assets/person.png" class="opinion-card__logo--img">
+                        </div>
+                        <h1>Marco</h1>
+                        <span>Des atristes de haut niveau et une organisation parfaite.</span>
                     </div>
-                    <h1 class="opinion-card__title">Marco</h1>
-                    <span class="opinion-card__subtitle">Des atristes de haut niveau et une organisation parfaite.</span>
                 </div>
             </div>
         </div>
@@ -229,18 +260,21 @@
                 <label>Message</label>
                 <input type="text" value="Entrez votre message">
                 <div class="contact-form__btn">
-                    <input type="submit" value="Annuler" class="btn--secondary">
-                    <input type="submit" value="Envoyer" class="btn--primary">
+                        <input type="submit" value="Annuler" class="btn--secondary">
+                        <input type="submit" value="Envoyer" class="btn--primary">
                 </div>
             </form>
         </div>
     </main>
     <!--Pied de page-->
-    <footer class="bar">
-        <button>Obtenez vos billets</button>
-        <span>Politique de confidentialité</span>
-        <span>Condition d'utilisation</span>
-        <span>2023 Festival Lumière Urbaine</span>
+    <footer>
+        <div class="footer">
+            <button>Obtenez vos billets</button>
+            <span>Politique de confidentialité</span>
+            <span>Condition d'utilisation</span>
+            <span>2023 Festival Lumière Urbaine</span>
+        </div>
     </footer>
 </body>
+
 </html>
