@@ -41,7 +41,20 @@ body {
   flex-direction: column;
 }
 
-/*En-tête*/
+/*En-tête
+*
+* Utilisation :
+* <header class="bar">
+*       <div class="header__logo">...</div>
+*       <nav class="navbar">...</nav>
+*       <div class="button">...</div>
+*   </header>
+*
+* Élements :
+* header__logo : Logo du site
+* navbar : barre de navigation
+* button : bouton
+*/
   
 .bar{
   background-color: var(--color-bg-dark);
@@ -85,6 +98,22 @@ body {
   background: var(--color-accent);
   color: var(--color-text);
 }
+
+/* Hero
+*
+* Utilisation :
+* <div class="hero">
+*           <h1>...</h1>
+*           <h2>....</h2>
+*           <div class="button">...</div>
+* </div>>
+*
+* Élements :
+* h1 : Titre
+* h2 : Sous-titre
+* button : bouton
+*/
+  
 
 .hero {
   background-image: url(./assets/fond_lumiere.jpg);
@@ -150,7 +179,20 @@ body {
   color: white;
 }
 
-/*Section en colonne*/
+/* Section en colonne
+*
+* Utilisation :
+*  <div class="card-column">
+*           <div class="card__header"></div>
+*           <div class="[...]__list">
+*               <div class="[...]-card">...</div>
+*           </div>
+*
+* Élements :
+* card__hearder : En-tête et titre
+* [...]__list : liste changeant dépendamment du contenu
+* [...]-card : carte du contenu
+*/
 
 .card-column {
   display: flex;
